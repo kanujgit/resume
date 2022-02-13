@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+ \usepackage{graphicx}
 % only for pdflatex
 % \input{glyphtounicode}
 
@@ -137,8 +138,8 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Anuj} \\ \vspace{5pt}
-    \small \faPhone* \texttt{+91 797.778.44759} \hspace{1pt} $|$
-    \hspace{1pt} \faEnvelope \hspace{2pt} \url{anujkumar30dec@email.com} \hspace{1pt} $|$ 
+    \small \faPhone* \texttt{+91 79.778.44759} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \url{anujkumar30dec@gmail.com} \hspace{1pt} $|$ 
     \hspace{1pt} \faGithub \hspace{2pt} {\href{https://github.com/kanujgit}{\myuline {Github}}}\hspace{1pt} $|$
     \hspace{1pt} \faLinkedin \hspace{2pt} {\href{https://www.linkedin.com/in/anuj-kumar-7262b9113/}{\myuline {Linkedin}}
     \\ \vspace{-3pt}}
@@ -172,13 +173,23 @@
   \resumeSubHeadingListEnd
 
 
+
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
-
+  \resumeSubheading
+      {\href{https://corp.rakuten.co.in/}{\myuline {Rakuten}}}{Nov 2021 -- Present : 5 mos}
+      {Software Engineer II }{Bangalore Urban, Karnataka, india}
+      \resumeItemListStart
+        \resumeItem{Implemented unit test which has improved 80-90\% automation testing.}
+        \resumeItem{Implemented group chat feature.}
+        \resumeItem{\textbf{ Technologies used} : Java, Kotlin, Firebase, REST API, Junit} 
+      \resumeItemListEnd
+      
     \resumeSubheading
-      {\href{https://www.algoworks.com/}{\myuline {Algoworks}}}{Jan. 2019 -- Present}
-      {Sr. Software Engineer }{Sector -62, Noida}
+      {\href{https://www.algoworks.com/}{\myuline {Algoworks}}}
+      {Jan 2019 -- Nov 2021 : 2 yrs 11 mos }
+      {Software Engineer }{Sector - 62, Noida, india}
       \resumeItemListStart
         \resumeItem{Developed Android Applications in Kotlin from scratch using Modern Android development practices, MVVM, Retrofit, Coroutines and Architecture Components.}
         \resumeItem{99\% Crash-free rate of all applications across different OEMs.}
@@ -188,25 +199,31 @@
       \resumeItemListEnd
 
     \resumeSubheading
-    {\href{https://sktuligroup.com/}{\myuline {Sk Tuli Group}}}{Feb. 2018 -- Jan. 2019}
-      {Android  Developer}{Sector-135, Noida}
+    {\href{https://sktuligroup.com/}{\myuline {SK Tuli Group Ltd.}}}{Feb 2018 -- Jan 2019 : 1 yr}
+      {Android  Developer}{Sector-135, Noida, india}
       \resumeItemListStart
         \resumeItem{Developed Android Applications in java from scratch using Modern Android development practices, MVP, MVC, Retrofit, Volley and Architecture Components.}
         \resumeItem{Maintaining codebase and integrating new features in consumer side and provider side Android apps}
-        \resumeItem{\textbf{ Technologies used} : Java, Firebase suites, REST API.} 
-
+        \resumeItem{\textbf{Technologies used} : Java, Firebase suites, REST API.} 
     \resumeItemListEnd
 
-   
 
-%-----------PROJECTS-----------
-
+   %-----------PROJECTS-----------
 \section{PROJECTS}
     \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=jp.co.rakuten.mobile.rcs\&hl=en_IN\&gl=US}{\myuline{Rakuten Link}} - (Rakuten)}} {Nov. 2021 -- current}
+          \resumeItemListStart
+            \resumeItem{Upgrade legacy code to Kotlin with coroutine for asynchronous calls.}
+            \resumeItem{\textbf{Highlights: }
+                Kotlin, Java, Rx-Android, Coroutine, MQTT, Espresso UI \& unit testing}
+            
+          \resumeItemListEnd
+          
+
       \resumeProjectHeading
           {\textbf{\href{https://www.merlyn.org/product}{\myuline{Merlyn AI Digital Assistant}} - (Algoworks)}} {Aug. 2019 -- current}
           \resumeItemListStart
-            \resumeItem{This project aims to help teachers in the classroom aka digital assistant for teachers.}
             \resumeItem{Designed a \textbf{collaborative learning ecosystem} for students and teachers with Google voice API.}
             \resumeItem{Designed a app sharing data lib with help of content provider api which \textbf{increase sharing data} limit in offline and online mode.}
             \resumeItem{\textbf{Highlights: }
@@ -217,11 +234,10 @@
           
          
           \resumeProjectHeading
-          {\textbf{\href{(https://play.google.com/store/apps/details?id=main.ClicFlyer\&hl=en_IN\&gl=US)}{\myuline{Shopping \& Offers App: ClicFlyer}} - (Algoworks)}}{Jul. 2020 -- Dec. 2020}
+          {\textbf{\href{https://play.google.com/store/apps/details?id=main.ClicFlyer\&hl=en_IN\&gl=US}{\myuline{Shopping \& Offers App: ClicFlyer}} - (Algoworks)}}{Jul. 2020 -- Dec. 2020}
           \resumeItemListStart
             \resumeItem{Implemented scoped storage framework in app which increased software reliability for higher versions of Android.}
             \resumeItem{Developed an invite feature in the Android app; 20\% of new users came through app invitations.}
-            \resumeItem{Converted all icon to \textbf{webp format} which reduce app size.}
             \resumeItem{\textbf{Highlights: }
                 Kotlin, Java, RxAndroid, Firebase Push Notification, Timber, Room, Junit testing. }
           \resumeItemListEnd
@@ -252,7 +268,7 @@
           
           
           \resumeProjectHeading
-          {\textbf{\href{https://play.google.com/store/apps/details?id=com.kibakibipoint.kibakibipoint}{\myuline{Local shopping and ordering app}} - (S.K.Tuli pvt.ltd)}}{Feb. 2018 -- Jan. 2019}
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.kibakibipoint.kibakibipoint}{\myuline{Local shopping and ordering app}} - (SK Tuli Group Ltd.)}}{Feb. 2018 -- Jan. 2019}
           \resumeItemListStart
             \resumeItem{Implement multilingual feature which increases app accessibility in local area about 40\%. } 
             \resumeItem{\textbf{Highlights: }
@@ -293,7 +309,7 @@
  \section{ACHIEVEMENTS}
  \begin{itemize}[leftmargin=0in, label={}]
      \small\item {
-     \textbf{Problem Solving}{: Solved 500+ questions on LeetCode, GeeksForGeeks and active participation in Algorithmic contests.}
+     \textbf{Problem Solving}{: Solved 200+ questions on {\href{https://leetcode.com/anuj29/}{\myuline{LeetCode}}}, GeeksForGeeks and active participation in Algorithmic contests.}
      }\\
      \textbf{\href{https://www.udemy.com/certificate/UC-f55fed86-d5c3-4391-a2b3-701a772a3485/}{\myuline{Kotlin Coroutines development course}}}{: Completed  5-hour long project based certification.}\\
      \textbf{\href{https://cutshort.io/certificate/53271}{\myuline{Cutshort skill certificate}}}{: \textbf{Advanced level proficiency} Android development in Cutshort exam.}
@@ -303,7 +319,6 @@
  \end{itemize}
 
 %------------------------------------------- end----------------------------------------------%
-
 
 
 \end{document}
